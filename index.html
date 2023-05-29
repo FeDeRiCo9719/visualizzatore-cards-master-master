@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project</title>
+</head>
+<body>
+    <!--===================================== HEADER =====================================-->
+    <header>
+        <div class="title" onclick="backToHome()">
+            alternativesignage
+        </div>
+
+        <div class="navRandom">
+            <button onclick="randomImg()" class="btnGenerate">generator</button>
+        </div>
+
+        <nav class="nav">   
+
+            <div id="selectCols" class="boxBtnSelectCols">
+
+                <a href="search.html">
+                    <button class="btnView">    
+                        <img src="icons/magnifying-glass-solid.svg" alt="">
+                    </button>
+                </a>
+
+                <button class="btnSquare btnView" onclick="changeView(3)">
+                </button>
+
+                <button class="btnView" onclick="changeView(6)">    
+                    <img src="icons/th-large-solid.svg" alt="">
+                </button>
+
+                <button class="btnView" onclick="changeView(12)">
+                    <img src="icons/th-solid.svg" alt="">
+                </button>
+            </div>
+        </nav>
+        
+    </header>
+
+    <!--===================================== MAIN =====================================-->
+    <main>
+        <!------------------------------ GRIGLIA ------------------------------>
+        <div id="mainContainer" class="cntCardsHome">
+            
+        </div>
+
+        <!------------------------------ IMMAGINE SELEZIONATA ------------------------------>
+        <div id="cardContainer" class="containerCard hidden">
+
+            <!-- card -->
+            <div id="cardBox" class="flex"></div>
+
+            <!-- buttons -->
+            <div class="boxButtons">
+
+                <div style="text-align: left;">
+                    <button style="margin-right: 20px;" class="btn btnUnderline">Print PDF Sticker</button>
+                    <button class="btn btnUnderline">Print PDF Poster</button>
+                </div>
+
+                <div>
+                    <button style="margin-right: 10px;" class="btn" onclick="prevImg()"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button style="margin-left: 10px;" class="btn" onclick="nextImg()"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <div style="text-align: right;">
+                    <button class="btn btnUnderline" onclick="showInfo()">Info</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!------------------------------ LOADING ------------------------------>
+        <div class="loadingBg hidden">
+            <div class="cntBar">
+                <!-- <div class="outsideBar">
+                    <div class="bar"></div>
+                </div> -->
+
+                <div class="loader"></div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script src="Js/script.js"></script>
+</body>
+</html>

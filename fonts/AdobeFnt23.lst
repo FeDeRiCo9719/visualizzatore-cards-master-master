@@ -1,0 +1,36 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/PIPPO/Desktop/desktop_application_filippo_lukas/Document fonts/AdobeFnt23.lst
+FileLength:933
+FileModTime:706200657
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:GTPressura-Bold
+FamilyName:GT Pressura
+StyleName:Bold
+MenuName:GT Pressura
+StyleBits:0
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:GT Pressura Bold
+WritingScript:Roman
+OutlineFileName:/Users/PIPPO/Desktop/desktop_application_filippo_lukas/Document fonts/GT-Pressura-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:143472
+FileModTime:385379304
+NameArray:0,Mac,4,GT Pressura Bold
+NameArray:0,Win,1,GT Pressura
+%EndFont
+
